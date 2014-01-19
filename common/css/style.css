@@ -8,6 +8,7 @@
 /*============================================================
 	1: universal reset
 ============================================================*/
+
 html,body{
 	margin:0;
 	padding:0;
@@ -15,19 +16,230 @@ html,body{
 
 body{
 	width:100%;
+	background-color:#f8f8f8;
+	color:#404040;
 }
 
-#wrapper{
-	width:1000px;
-	margin:0 auto;
+p{line-height:150%;}
+
+a img{
+    border-style:none;
 }
+
+	.wrapper{
+		width:1000px;
+		margin:0 auto;
+	}
+
+		.block_element{
+			width:940px;
+			height:auto;
+			padding:5px 30px;
+			float:left;
+			background-color:#fff;	
+		}		
 
 
 /*============================================================
 	2: header
 ============================================================*/
 
+		#site_header{
+			border-right:1px solid #eee;
+			border-bottom:1px solid #eee;
+		}
+
+			#site_header h1{
+				width:200px;
+				line-height: 70%;
+				float:left;
+			}
+
+			#site_header nav{
+				width:420px;
+				float:right;
+			}
+
+				#site_header nav li{
+					margin-left:0px;
+					float:left;
+					list-style-type: none;
+				}
+
 /*============================================================
-	1: footer
+	3: entry_body
+		3-1: 
 ============================================================*/
+
+	#main_contents{
+		margin-top:20px;
+		border-right:1px solid #eee;
+		border-bottom:1px solid #eee;
+	}
+
+		.entry_body{
+			float:left;
+			margin-top:20px;
+			margin-bottom:10px;
+		}
+
+			.entry_header{
+			}
+
+				.entry_header a{
+					z-index:1;
+					float:left;
+				}
+
+					.entry_title{
+						width:835px;
+						margin-top:5px;
+						padding:8px 15px 8px 15px;
+						float:left;
+						border-top: 1px dashed #ddd;
+						border-right: 1px dashed #ddd;
+						border-bottom: 1px dashed #ddd;
+					}
+
+						.entry_title time{
+							padding:1px 5px 1px 5px;
+							float:left;
+							text-align:center;
+							color:#FF8410;
+						}
+
+							.entry_title span.entry_year{
+								font-size:20px;
+								font-weight:bold;
+							}
+
+						.entry_title h1{
+							width:700px;
+							padding:8px 20px;
+							margin:0;
+							font-size:22px;
+							float:left;
+						}
+
+							.entry_title a{
+								color:#303030;
+								text-decoration:none;
+							}
+
+							.entry_title a:hover{
+								color:#ff0000;
+								font-style:normal;
+								text-decoration:underline;
+							}						
+
+				.entry_paragraph{
+					float:left;
+				}
+
+					.entry_continue{
+						width:115px;
+						padding:5px 10px;
+						text-align:center;
+						background-color:#f8f8f8;
+						border-radius: 6px;        /* CSS3草案 */  
+    					-webkit-border-radius: 6px;    /* Safari,Google Chrome用 */  
+    					-moz-border-radius: 6px;   /* Firefox用 */  
+    					margin-top:-4px !important;
+    					margin-left:2px;
+    					border:1px solid #f0f0f0;
+						font-size:16px;
+					}
+
+					.entry_continue:hover{
+						background-color:#FF8410;
+						border:1px solid #ff8410;
+						color:#fff;
+						text-decoration:none;
+					}
+
+					.entry_continue:hover a{
+						color:#fff;
+					}
+
+						.entry_continue a{
+							color:#505050; 
+							text-decoration:none;
+						}
+
+						.entry_continue a:hover{
+							color:#fff;
+							text-decoration:none;
+						}
+
+				.entry_footer{
+					width:135px;
+					margin-top:5px;
+					margin-right:-29px !important;
+					margin-bottom:5px;
+					padding:8px;
+					float:right;
+					text-align:center;
+					background-color:#60D4D4;
+					background-image: url("../image/chat-active.png");
+					background-repeat:no-repeat;
+					background-position:23px 9px;
+				}
+
+					.entry_footer a{
+						margin-left:10px;
+						color:#fff;
+						text-decoration:none;
+					}
+					.entry_footer a:hover{
+						text-decoration:underline;
+					}
+
+
+/*============================================================
+	4: footer
+============================================================*/
+
+	#site_footer{
+		width:100%;
+		margin-top:30px;
+		float:left;
+		background-color:#b0b0b0;
+		font-size:18px;
+		color:#fff;
+		line-height:140%;
+	}
+
+		.footer_block{
+			width:435px;
+			margin:10px 30px;
+			float:left;
+		}
+
+			.footer_block h1{
+				padding:10px;
+				border-bottom:1px dashed #fff;
+				font-size:25px;			
+			}
+			
+			.footer_block a{
+				color:#fff;		
+			}			
+
+				.footer_block img{
+					padding:0px 15px;
+					float:left;
+				}
+
+				.footer_block span{
+					padding-left:10px;
+					display:block;
+				}
+				
+				.footer_block span#name{
+					font-size:20px;
+				}
+				.footer_block span#description{
+					font-size:16px;
+				}
+
 
