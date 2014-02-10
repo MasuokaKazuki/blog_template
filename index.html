@@ -14,14 +14,13 @@
 <meta property="og:image" content="#"> <!--ウェブページのサムネイル -->
 <meta property="og:locale" content="ja_JP">
 <link rel="stylesheet" href="./common/css/style.css">
+<script src="./common/js/jquery-1.10.2.min.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<header id="site_header" class="block_element">
 			<h1>
-				<a href="/index.html">
-					<img src="./common/image/logo.png" alt="_various" width="171px" height="40px" />
-				</a>
+				<a href="/index.html"><img src="./common/image/logo.png" alt="_various" width="171px" height="40px" /></a>
 			</h1>
 			<nav>
 				<ul>
@@ -32,14 +31,14 @@
 			</nav>
 		</header><!--#site_header-->
 
-		<div id="main_contents"  class="block_element">
+		<div class="main_contents">
 			<article class="entry_body">
 				<header class="entry_header">
 					<a href="./"><img src="./common/image/icon_01.png" alt="Category:カテゴリー" />	</a>
 					<div class="entry_title">
 						<time datetime="2011-12-22">
-							<span class="entry_year">2013</span><br />
-							12.22
+							<span class="entry_year">2013</span>
+							<span class="entry_date">12.22</span>
 						</time>
 						<h1>
 							<a href="./">第4回　HTML5で新しく定義された新要素『</a>
@@ -61,14 +60,14 @@
 				</footer><!--.entry_footer-->
 			</article><!--.entry_body-->
 		</div>
-		<div id="main_contents"  class="block_element">
+		<div class="main_contents"  class="block_element">
 			<article class="entry_body">
 				<header class="entry_header">
 					<a href="./"><img src="./common/image/icon_01.png" alt="Category:カテゴリー" />	</a>
 					<div class="entry_title">
 						<time datetime="2011-12-22">
-							<span class="entry_year">2013</span><br />
-							12.22
+							<span class="entry_year">2013</span>
+							<span class="entry_date">12.22</span>
 						</time>
 						<h1>
 							<a href="./">第4回　HTML5で新しく定義された新要素『</a>
@@ -97,7 +96,7 @@
 			<div class="footer_block">
 				<section>
 					<h1>プロフィール</h1>
-					<article>
+					<article id="profile_article">
 						<img src="./common/image/photo.jpg" width="60px" height="60px" alt="プロフィール画像" />
 						<span id="name">Masuoka Kazuki</span>
 						<span id="description">うちの犬が世界一</span>
